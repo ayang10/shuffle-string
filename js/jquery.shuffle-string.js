@@ -1,4 +1,4 @@
-(function($) {
+(function( $, window, document, undefined) {
     $.fn.shuffleString = function (options) { // qjuery way of defining functions
 
         var settings = $.extend({
@@ -31,4 +31,4 @@
         })
     }
 
-}(jQuery)); // wrapped inside this function because anything not wrap in this function may conflict with functions outside of the plugin
+}(jQuery, window, document)); // wrapped inside this function because anything not wrap in this function may conflict with functions outside of the plugin
